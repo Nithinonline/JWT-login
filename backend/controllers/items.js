@@ -67,6 +67,8 @@ const login = async (req, res) => {
     .json({ message: "success", user: userExisted, userToken });
 };
 
+
+//userverification
 const userVerification = (req, res, next) => {
   const cookie = req.headers.cookie;
   console.log(cookie);
